@@ -1,0 +1,28 @@
+{
+  "name": "budget-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A zero-based envelope budgeting app in the spirit of YNAB",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:artifact": "tsc --noEmit && vite build --mode artifact && node scripts/build-artifact.mjs",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.8.3",
+    "vite": "^6.4.4",
+    "vite-plugin-singlefile": "^2.3.4",
+    "vitest": "^3.2.7"
+  }
+}
